@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Scanify</string>
+    <string name="appName">Scanify</string>
+    <string name="QR_Desc">Find a QR code and scan it to Display the value it holds.</string>
+</resources>

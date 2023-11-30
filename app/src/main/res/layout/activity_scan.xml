@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1A2C"
+    tools:context=".ScanActivity">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanInterface"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:autoFocusButtonColor="@color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@color/white"
+        app:flashButtonVisible="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maskColor="#880B1527">
+
+    </com.budiyev.android.codescanner.CodeScannerView>
+
+    <TextView
+        android:id="@+id/tvScanSome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="181dp"
+        android:fontFamily="@font/roboto"
+        android:text="Scan QR/Barcode"
+        android:textColor="#6C77DA"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scanInterface" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="73dp"
+        android:textAlignment="center"
+        android:textColor="#6C77DA"
+        android:textIsSelectable="true"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvScanSome" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
